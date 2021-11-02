@@ -3,14 +3,14 @@
 <div class="d-flex justify-content-between">
     <h4> <%= @post[:title]%> by username</h4>
     <div class="d-flex justify-content-end">
-<span>Comments: x</span>
-<span>Likes: y </span>
+<span>Comments: <%= @post[:commentsCounter]%></span>
+<span>Likes: <%= @post[:likesCounter]%></span>
 </div>
 </div>
 <p> <%= @post[:text]%> </p>
 </div>
 <div class="container rounder border">
-<% @post[:comments].each do |comment| %>
+<% @post.comments.each do |comment| %>
 <p>Username: <%= comment[:text] %></p>
 <% end %>
 </div>

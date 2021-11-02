@@ -9,18 +9,18 @@
   </div>
   </div>
 </div>
-<% @posts.each do |post| %>
+<% @user.posts.each do |post| %>
 <div class=" my-3">
 <div class="container border rounded my-1">
 <h4> <%= post[:title]%> </h4>
 <p> <%= post[:text]%> </p>
 <div class="d-flex justify-content-end">
-<span>Comments: x</span>
-<span>Likes: y </span>
+<span>Comments: <%= post[:commentsCounter]%></span>
+<span>Likes: <%= post[:likesCounter]%></span>
 </div>
 </div>
 <div class="container rounder border">
-<% post[:comments].each do |comment| %>
+<% post.comments.each do |comment| %>
 <p>Username: <%= comment[:text] %></p>
 <% end %>
 </div>
