@@ -1,1 +1,17 @@
-<h1>Users <%= @user_id %> post <%= @id %></h1>
+<div class=" my-3">
+<div class="container border rounded my-1">
+<div class="d-flex justify-content-between">
+    <h4> <%= @post[:title]%> by username</h4>
+    <div class="d-flex justify-content-end">
+<span>Comments: x</span>
+<span>Likes: y </span>
+</div>
+</div>
+<p> <%= @post[:text]%> </p>
+</div>
+<div class="container rounder border">
+<% @post[:comments].each do |comment| %>
+<p>Username: <%= comment[:text] %></p>
+<% end %>
+</div>
+</div>

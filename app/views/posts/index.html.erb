@@ -1,1 +1,31 @@
-<h1>User <%= @user_id %> posts list</h1>
+<div class="container my-3">
+  <div class="row">
+  <div class="col-3">
+  <%= image_tag @user[:photo], :size => "150x150", class:"rounded" %>
+  </div>
+  <div class="border rounded col-9 d-flex align-items-center justify-content-between">
+  <h3><%= @user[:name] %></h3>
+  <span>Number of posts:<%= @user[:postsCounter] %></span>
+  </div>
+  </div>
+</div>
+<% @posts.each do |post| %>
+<div class=" my-3">
+<div class="container border rounded my-1">
+<h4> <%= post[:title]%> </h4>
+<p> <%= post[:text]%> </p>
+<div class="d-flex justify-content-end">
+<span>Comments: x</span>
+<span>Likes: y </span>
+</div>
+</div>
+<div class="container rounder border">
+<% post[:comments].each do |comment| %>
+<p>Username: <%= comment[:text] %></p>
+<% end %>
+</div>
+</div>
+<% end %>
+<div class=" container col-12 text-center">
+<button class="border rounded">Pagination</button>
+</div>
