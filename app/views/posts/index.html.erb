@@ -9,6 +9,28 @@
   </div>
   </div>
 </div>
+
+<div class="container my-3 rounded border">
+<%= form_with url: posts_path do |form| %>
+
+  <%= form.hidden_field :user_id, value: @user.id %>
+
+  <div class="my-2">
+    <%= form.label :title %><br>
+    <%= form.text_field :title, class:"form-control" %>
+  </div>
+
+  <div  class="my-2">
+    <%= form.label :text %><br>
+    <%= form.text_area :text, class:"form-control" %>
+  </div>
+
+  <div  class="my-2">
+    <%= form.submit class:'btn btn-primary' %>
+  </div>
+<% end %>
+</div>
+
 <% @user.posts.each do |post| %>
 <div class=" my-3">
 <div class="container border rounded my-1">
@@ -19,6 +41,25 @@
 <span>Likes: <%= post[:likesCounter]%></span>
 </div>
 </div>
+
+<div class="container my-3 rounded border">
+  <%= form_with url: comments_path do |form| %>
+
+  <%= form.hidden_field :user_id, value: @user.id %>
+  <%= form.hidden_field :post_id, value: post.id%>
+
+  <div  class="my-2">
+    <%= form.label :text%>
+    <%= form.text_field :text, class:"form-control" %>
+  </div>
+
+  <div  class="my-2">
+    <%= form.submit class:'btn btn-primary' %>
+  </div>
+
+<% end %>
+</div>
+
 <div class="container rounder border">
 <% post.comments.each do |comment| %>
 <p>Username: <%= comment[:text] %></p>
