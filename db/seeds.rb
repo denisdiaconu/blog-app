@@ -6,9 +6,9 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-User.create!([{name: 'carlo', photo: 'https://images-eu.ssl-images-amazon.com/images/I/41vMBIeF-zL._SX198_BO1,204,203,200_QL40_ML2_.jpg', postsCounter:1, bio: 'Bio of the user'},
-    {name: 'marco', photo: 'https://images-eu.ssl-images-amazon.com/images/I/41vMBIeF-zL._SX198_BO1,204,203,200_QL40_ML2_.jpg', postsCounter:1, bio: 'Bio of the user'},
-    {name: 'giulio', photo: 'https://images-eu.ssl-images-amazon.com/images/I/41vMBIeF-zL._SX198_BO1,204,203,200_QL40_ML2_.jpg', postsCounter:1, bio: 'Bio of the user'}])
+User.create!([{name: 'carlo', email: 'dfffff@gmail.com', password: 'fwafafawf', photo: 'https://images-eu.ssl-images-amazon.com/images/I/41vMBIeF-zL._SX198_BO1,204,203,200_QL40_ML2_.jpg', postsCounter:1, bio: 'Bio of the user'},
+    {name: 'marco', email: 'dfjiafwfwaffawhf@gmail.com', password: 'fwafafawf', photo: 'https://images-eu.ssl-images-amazon.com/images/I/41vMBIeF-zL._SX198_BO1,204,203,200_QL40_ML2_.jpg', postsCounter:1, bio: 'Bio of the user'},
+    {name: 'giulio', email: 'dffffff@gmail.com', password: 'fwafafawf', photo: 'https://images-eu.ssl-images-amazon.com/images/I/41vMBIeF-zL._SX198_BO1,204,203,200_QL40_ML2_.jpg', postsCounter:1, bio: 'Bio of the user'}])
 
 Post.create!([{ user_id: 1, title: 'post1', text: 'beautiful', commentsCounter: 3, likesCounter: 3 },
      { user_id: 1, title: 'post2', text: 'beautiful1', commentsCounter: 3, likesCounter: 3 },

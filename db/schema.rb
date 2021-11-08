@@ -52,9 +52,9 @@ ActiveRecord::Schema.define(version: 2021_11_08_143936) do
     t.datetime "reset_password_sent_at"
     t.datetime "remember_created_at"
     t.string "name"
-    t.string "photo"
+    t.string "photo", default: "https://www.pinclipart.com/picdir/middle/157-1578186_user-profile-default-image-png-clipart.png"
     t.string "bio"
-    t.integer "postsCounter"
+    t.integer "postsCounter", default: 0
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["email"], name: "index_users_on_email", unique: true

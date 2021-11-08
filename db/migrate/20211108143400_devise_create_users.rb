@@ -33,9 +33,9 @@ class DeviseCreateUsers < ActiveRecord::Migration[6.1]
       # t.datetime :locked_at
 
       t.string :name
-      t.string :photo
+      t.string :photo, default: 'https://www.pinclipart.com/picdir/middle/157-1578186_user-profile-default-image-png-clipart.png'
       t.string :bio
-      t.integer :postsCounter
+      t.integer :postsCounter, default: 0
       t.timestamps null: false
     end
 
