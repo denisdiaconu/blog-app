@@ -54,6 +54,7 @@ group :test do
   gem 'webdrivers'
 end
 
+gem 'devise'
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'bullet', group: 'development'
 gem 'rubocop'
