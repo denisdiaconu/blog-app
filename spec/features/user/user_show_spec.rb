@@ -17,7 +17,7 @@ RSpec.describe 'User view', type: :feature do
     it "should be able see user's username" do
       expect(page).to have_content('Jake')
     end
-    it "should see a button." do
+    it 'should see a button.' do
       expect(page).to have_content('See all posts')
     end
     it "should be able see the user's bio." do

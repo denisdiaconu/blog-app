@@ -18,3 +18,4 @@ RSpec.describe 'User view', type: :feature do
       expect(page).to have_content('Number of posts:3')
     end
   end
+end

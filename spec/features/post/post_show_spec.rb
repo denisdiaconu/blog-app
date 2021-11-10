@@ -18,7 +18,7 @@ RSpec.describe 'Post view', type: :feature do
         expect(page).to have_content('Post title test')
       end
       it 'how many likes the post has.' do
-        expect(page).to have_content("#{post.likesCounter}")
+        expect(page).to have_content(post.likesCounter.to_s)
       end
       it 'who wrote the post.' do
         expect(page).to have_content(post.user.name.to_s)
