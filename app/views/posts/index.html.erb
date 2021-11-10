@@ -62,7 +62,7 @@
 
 <div class="container rounder border">
 <% post.comments.each do |comment| %>
-<p>Username: <%= comment[:text] %></p>
+<p><%= User.find_by(id: comment.user_id).name %>: <%= comment[:text] %></p>
 <% end %>
 </div>
 </div>
