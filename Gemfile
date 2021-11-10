@@ -54,6 +54,7 @@ group :test do
   gem 'webdrivers'
 end
 
+gem 'cancancan'
 gem 'devise'
 gem 'devise-bootstrapped', github: 'king601/devise-bootstrapped', branch: 'bootstrap4'
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
