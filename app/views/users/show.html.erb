@@ -26,5 +26,5 @@
 </div>
 <% end %>
 <div class=" container col-12 text-center">
-<%= link_to "See all posts", posts_path(@user.id) %>
+<%= link_to "See all posts", posts_path(@user.id), id: "see_all_#{@user.id}"%>
 </div>
