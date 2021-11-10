@@ -1,16 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe PostsController, type: :controller do
-  controller do
-    def index
-      render json: {}, status: 200
-    end
-  end
-
-  describe 'GET #index' do
-    it 'returns a 200 custom status code' do
-      get :index
-      expect(response).to have_http_status(200)
-    end
-  end
+RSpec.describe PostsController, type: :request do
+  include Devise::Test::IntegrationHelpers
+  let(:user) { User.create(name: 'Cork', email: 'example@mail.com', password: 'password', photo: 'www.google.com') }
 end
