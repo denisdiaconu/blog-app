@@ -23,7 +23,7 @@ To get a local copy up and running follow these simple example steps on the comm
 
   # Change directory to the root of project
 
-  $ cd blog-app
+  $ cd blog-app/
 
   # Run bundle
 
@@ -43,6 +43,12 @@ To get a local copy up and running follow these simple example steps on the comm
 - GitHub: [@DenisDiaconu](https://github.com/denisdiaconu)
 - Twitter: [@DenisAndreiDia1](https://twitter.com/DenisAndreiDia1)
 - LinkedIn: [Denis Diaconu](https://www.linkedin.com/in/denis-diaconu-1394091b7/)
+
+👤 **Aganze Mataba Henri**
+
+- GitHub: [@hiromataba](https://github.com/hiromataba)
+- Twitter: [@twitterhandle](https://twitter.com/MatabaHiro)
+- LinkedIn: [Hiro Mataba](https://www.linkedin.com/in/hiro-mataba-1bb910209/)
 
 
 ## 🤝 Contributing
